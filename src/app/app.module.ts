@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { TimeSelectComponent } from './time-select/time-select.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TimeSelectComponent
   ],
   imports: [
     BrowserModule

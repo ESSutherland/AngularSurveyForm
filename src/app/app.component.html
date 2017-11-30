@@ -1,20 +1,37 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<div id='surveyForm'>
+<h2><p>WDV341 Intro PHP</p></h2>
+<h3><p>Survey Form</p></h3>
 
+<form name="form1" method="post" action="">
+          <fieldset>
+              <p>
+                  <label>
+                      Email:
+                      <input type="text" name="cust_email" id="cust_email"/>
+                  </label>
+              </p>
+              <p>Please rate the following times from best (1) to worst (4)</p>
+              <p>
+                  <app-time-select [id]="1"></app-time-select>
+                  Monday/Wednesday 10:10 am-Noon
+              </p>
+              <p>
+                  <app-time-select [id]="2"></app-time-select>
+                  Tuesday 6:00 pm-9:00 pm
+              </p>
+              <p>
+                  <app-time-select [id]="3"></app-time-select>
+                  Wednesday 6:00 pm-9:00 pm
+              </p>
+              <p>
+                  <app-time-select [id]="4"></app-time-select>
+                  Tuesday/Thursday 10:10 am-Noon
+              </p>
+              <p>
+                  <input type="submit" name="button" id="button" value="Submit"/>
+                  <input type="reset" name="button2" id="button2" value="Reset"/>
+              </p>
+          </fieldset>
+      </form>
+      <p>&nbsp;</p>
+</div>
