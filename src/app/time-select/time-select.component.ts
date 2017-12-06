@@ -12,10 +12,10 @@ export class TimeSelectComponent implements OnInit {
 
   @Input()
   id: string;
-  option: Option;
   selectId: string;
-  options = OPTIONS;
 
+  options = OPTIONS;
+  option: Option;
   constructor() {}
 
   ngOnInit() {
