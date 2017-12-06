@@ -1,0 +1,6 @@
+<select [id]="setSelectId()" #timeSelect (change)="handleChange($event)">
+  <ng-container *ngFor="let option of options">
+  <option *ngIf="option.show || option.currentSelect === timeSelect.id"
+  value={{option.id}}>{{option.choice}}</option>
+</ng-container>
+</select>
